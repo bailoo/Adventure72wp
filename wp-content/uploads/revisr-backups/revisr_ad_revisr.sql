@@ -19,11 +19,12 @@ CREATE TABLE `ad_revisr` (
   `event` varchar(42) COLLATE latin1_general_ci NOT NULL,
   `user` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `ad_revisr` WRITE;
 /*!40000 ALTER TABLE `ad_revisr` DISABLE KEYS */;
+INSERT INTO `ad_revisr` VALUES (1,'2016-02-20 21:59:58','Successfully backed up the database.','backup','bailoo');
 /*!40000 ALTER TABLE `ad_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
